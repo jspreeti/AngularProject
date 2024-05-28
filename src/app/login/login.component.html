@@ -1,0 +1,14 @@
+<BR/>
+<div class="container">
+UserName : <input type="text" name="username" [(ngModel)]="username"/>
+Password : <input type="password" name="password" [(ngModel)]="password"/>
+
+
+<!-- User Name : {{username}} -->
+
+<button (click) = handleLogin()  class="btn-success">Login</button>
+
+<div>
+<p *ngIf="invalidLogin">Invalid Credentials</p>
+
+</div>
